@@ -5,7 +5,7 @@
 
   body {
     background: hsl(233, 47%, 7%);
-    padding: 0 16px;
+    padding: 0 32px;
   }
 
 h1, h2 {
@@ -16,7 +16,7 @@ h1 {
     font-family: 'inter', sans-serif;
     font-weight: 700;
     font-size: 32px;
-    padding: 24px 24px 0 24px;
+    padding: 48px 24px 0 24px;
     text-align: center;
 }
 h2 {
@@ -38,10 +38,15 @@ p {
 }
 
 img {
-    display: block;
+  display: flex;
+  flex-shrink: inherit;
+  flex-grow: none;
   object-fit: cover; 
   mix-blend-mode: multiply;
   width: 100%;
+  border: hidden;
+  border-radius: 10px 10px 0 0;
+  margin: 0 auto;
 }
 
 .highlight {
@@ -71,15 +76,15 @@ img {
     display: flex;
     flex-direction: column;
       margin: 100px auto;
-      max-width: 600px; 
+      /* max-width: 1000px;  */
       background: hsl(244, 38%, 16%);
       border-radius: 10px;
-      /* overflow: hidden; */
   }
 
 .hero-image {
     display: block;
     margin: 0 auto;
+    width: 100%;
     background: hsl(277, 64%, 61%);
     border-radius: 10px 10px 0 0;
     z-index: 2;
